@@ -1,0 +1,62 @@
+<div class="main-container">
+  <div class="music" *ngIf="showSpotify">
+    <p class="playing-text">Listening to music</p>
+    <div class="spotify">
+      <img [src]="spotify.album_art_url" alt="" />
+
+      <div class="artist-song-name-container">
+        <p class="artist">{{ spotify.artist }}</p>
+        <p class="song-name">{{ spotify.song }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="blury-ass-square">
+    <div class="container">
+      <div class="left">
+        <img
+          class="profile-picture"
+          src="https://media.discordapp.net/attachments/1192560961152876642/1195118306730971207/7b20e47459c2c294386908dcb6c99496.png?ex=65b2d3a8&is=65a05ea8&hm=30f5b7903c983fa776227e40c726efb745dfa450c6317a307156e74d5b2c2a23&=&format=webp&quality=lossless"
+          alt=""
+        />
+        <h1>Socials:</h1>
+        <div class="links">
+          <a href="https://www.youtube.com/@silencexyz." target="_blank"
+            ><img
+              src="../../assets/images/1384060.png"
+              height="40px"
+              width="50px"
+              alt=""
+              style="margin-right: 20px"
+          /></a>
+          <a href="https://discord.gg/silencexyz" target="_blank"
+            ><img
+              src="../../assets/images/discord-icon.png"
+              height="40px"
+              width="50px"
+              alt=""
+              style="margin-right: 20px"
+          /></a>
+          <a href="https://steamcommunity.com/id/silencexyz/" target="_blank"
+            ><img
+              src="../../assets/images/Steam_icon_logo.svg.png"
+              height="40px"
+              width="40px"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="right">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/4Jz2L13hGKIC9b3V7v2PbW?utm_source=generator&theme=0"
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>

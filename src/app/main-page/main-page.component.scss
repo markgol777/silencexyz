@@ -1,0 +1,170 @@
+*,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blury-ass-square {
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.72px solid #a3a3a311;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 8px;
+    animation: slide-up 0.5s ease;
+    box-shadow: 0 0 21px 1px #151515;
+    /* height: 60%; */
+    /* width: 70%; */
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    position: relative;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(150px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.profile-picture {
+    width: 40%;
+    height: 40%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.right {
+    width: 60%;
+}
+
+.steam-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.discord-link {
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li {
+    color: white;
+    margin-left: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .blury-ass-square {
+        width: 83%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+.quote {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+}
+
+
+.spotify {
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.72px solid #a3a3a311;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    animation: slide-up 0.5s ease;
+    box-shadow: 0 0 21px 1px #151515;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 150px;
+
+    img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .artist {
+        color: white;
+    }
+
+    .artist-song-name-container {
+        margin-left: 20px;
+        color: white;
+    }
+}
+
+.playing-text {
+    color: white;
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
